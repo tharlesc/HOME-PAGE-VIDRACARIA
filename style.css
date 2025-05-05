@@ -1,0 +1,584 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5em 20px 15px;
+    border-bottom: 3px solid #222dfa;
+    box-shadow: 0px 0px 10px rgb(101, 100, 100);
+    background-color: #111cf4;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+#logo {
+    display: flex;
+    width: 9rem;
+    margin-left: 10vh;
+    margin-top: 10px;
+    filter: grayscale(100%) brightness(100);
+}
+
+.links {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.a {
+    margin-right: 3vh;
+    color: rgb(255, 255, 255);
+    transition: all 0.5s
+}
+
+.a:hover {
+    font-weight: 600;
+    text-shadow: 5px #4d09fb;
+}
+
+#login {
+    font-weight: 700;
+    color: #111cf4;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 15px 10px 15px;
+    border-radius: 12px;
+    transition: all 1s;
+}
+
+#login:hover {
+    transform: scale(1.2);
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(-78deg, rgba(0, 0, 0, 0.234), rgba(0, 0, 0, 0.621)), url('aasets/fachada.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.text1 {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    margin: 5rem 40em 0 5em;
+    padding: 1.5em;
+
+}
+
+.text1 .tit {
+    margin-top: 1px;
+    margin-left: 1%;
+    padding-bottom: 5px;
+    font-size: 3em;
+}
+
+.text1 p {
+    text-align: justify;
+    margin-right: 0;
+
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: rgb(21, 0, 255);
+    margin: 1rem;
+    padding: 1.5em 15em 1.5em 15em;
+    transition: all 1s;
+    border: none;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 #111cf427;
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.btn:hover {
+    background-color: #4d09fb;
+    scale: 1.05;
+}
+
+#saiba {
+    padding: 5vh;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    scroll-margin-top: 12vh;
+    border-top: #a5a5a5 solid 1px;
+}
+
+.cta {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 10px;
+}
+
+.cta h1 {
+    font-size: 50px;
+}
+
+.cta p {
+    margin: 2rem;
+    padding: 0rem 5rem 0rem 5rem;
+    font-size: large;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+}
+
+.card {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 450px;
+    padding: 50px;
+    margin: 1rem;
+    border: #eeeeee solid;
+    border-radius: 30px;
+    color: #000000;
+    box-shadow: 0 0 20px rgba(93, 93, 93, 0.2);
+    text-align: center;
+    font-size: large;
+    transition: all 1.5s;
+}
+
+.card h1,
+h2,
+p {
+    margin-bottom: 0.5em;
+}
+
+.card:hover {
+    scale: 1.1;
+}
+
+.loc {
+    border-top: #b9b9b9 solid 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5vh;
+    scroll-margin-top: 12vh;
+}
+
+.loc h1 {
+    margin: 10px;
+    font-size: 50px
+}
+
+.loc p i {
+    margin: 1rem;
+    font-size: large;
+}
+
+.loc button,
+.copy {
+    margin: 2px;
+    width: 20px;
+    border: none;
+    background: none;
+    transition: all 0.5s;
+    ;
+}
+
+.loc button,
+.copy:hover {
+    scale: 1.2;
+    cursor: copy;
+}
+
+.map {
+    background-image: url('aasets/map.png');
+    background-size: cover;
+    background-position: center;
+    margin: 20px;
+    padding: 30em 0rem 0rem 80rem;
+    cursor: zoom-in;
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10vh;
+    scroll-margin-top: 12vh;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.form .h1 {
+    margin: 25px;
+    font-size: 50px;
+}
+
+.form,
+p {
+    margin: 10px;
+    ;
+}
+
+.form .frm {
+    margin: 5px;
+    width: 100%;
+    padding: 1.5em 2em 1.5em 2em;
+    border: #111cf4 solid 1px;
+    border-radius: 10px;
+}
+
+.assun {
+    margin: 5px;
+    width: 100%;
+    padding: 1.5em 2em 1.5em 2em;
+    border: #111cf4 solid 1px;
+    border-radius: 10px;
+}
+
+.f {
+    font-weight: 700;
+    align-content: baseline;
+}
+
+.btn2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: rgb(21, 0, 255);
+    margin: 1rem;
+    padding: 1.5em 15em 1.5em 15em;
+    border-radius: 12px;
+    transition: all 1s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn2:hover {
+    background-color: #4d09fb;
+    scale: 1.1;
+}
+
+.rodape {
+    background-color: #111cf4;
+    color: #fff;
+    padding: 30px 20px;
+    font-family: Arial, sans-serif;
+
+}
+
+.rodape-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.info p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.info .slogan {
+    margin-top: 10px;
+    font-style: italic;
+    color: #fff;
+}
+
+.logo {
+    width: 100px;
+    max-width: 180px;
+    width: 100%;
+    height: auto;
+    filter: grayscale(100%) brightness(100) opacity(50%);
+}
+
+@media screen and (max-width: 768px) {
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    nav {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+    }
+
+    #logo {
+        width: 100px;
+        position: relative;
+        align-items: start;
+        margin-left: 0;
+        margin-right: 3vh;
+    }
+
+    .a {
+        transition: none;
+        transform: none;
+        position: relative;
+        align-items: end;
+        justify-content: center;
+        padding: 0;
+        margin: 0.3rem;
+        font-size: 0.7rem;
+    }
+
+    .conteudo {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(-78deg, rgba(0, 0, 0, 0.559) 0%, rgba(0, 0, 0, 0.501)), url('aasets/fachada.jpg');
+        height: 100vh;
+    }
+
+    .text1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+        padding: 0;
+    }
+
+    .text1 .tit {
+        font-size: 25px;
+        margin: 0;
+        padding: 10px;
+        text-align: start;
+    }
+
+    .text1 p {
+        text-align: start;
+        margin-right: 0;
+        font-size: medium;
+    }
+
+    .btn {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: satr;
+        justify-content: center;
+        font-weight: 600;
+        color: #ffffff;
+        margin: 1rem;
+        padding: 1rem 0 1rem 0;
+        transition: all 1s;
+        border: none;
+        cursor: pointer;
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 8px 32px 0 #111cf427;
+        backdrop-filter: blur(9px);
+        -webkit-backdrop-filter: blur(9px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+
+    .btn:hover {
+        background-color: #4d09fb;
+        scale: 1.05;
+    }
+
+    #saiba {
+        padding: 5vh;
+        margin: 0;
+        scroll-margin-top: 3rem;
+    }
+
+    .cta {
+        display: flex;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .cta p {
+        margin: 1rem;
+        padding: 0;
+        font-size: large;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+        padding: 0;
+    }
+
+    .card {
+        width: 100%;
+        height: 40vh;
+        align-items: center;
+        justify-content: center;
+        padding: 2vh 2vh 2vh 2vh;
+        margin: 1vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card p {
+        font-size: medium;
+    }
+
+    .loc {
+        margin-bottom: 2rem;
+        padding: 2rem;
+        width: 100%;
+        scroll-margin-top: 4rem;
+    }
+
+    .loc p i {
+        margin: 0;
+        font-size: large;
+    }
+
+    .loc button,
+    .copy {
+        margin: 2px;
+        width: 20px;
+        border: none;
+        background: none;
+        transition: all 0.5s;
+        ;
+    }
+
+    .loc button,
+    .copy:hover {
+        scale: 1.2;
+        cursor: copy;
+    }
+
+    .map {
+        background-image: url('aasets/map.png');
+        background-size: cover;
+        background-position: center;
+        margin: 20px;
+        padding: 20em 0rem 0rem 25rem;
+    }
+
+    .contato {
+        border-top: #111cf4 solid 1px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 10vh 3vh 10vh 3vh;
+        scroll-margin-top: 4rem;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+    }
+
+    .h1 {
+        margin: 2px;
+        font-size: 30px;
+    }
+
+    .form .frm {
+        margin: 5px;
+        width: 100%;
+        padding: 1.5em 2em 1.5em 2em;
+        border: #111cf4 solid 1px;
+        border-radius: 10px;
+    }
+
+    .assun {
+        margin: 5px;
+        width: 100%;
+        padding: 1.5em 2em 1.5em 2em;
+        border: #111cf4 solid 1px;
+        border-radius: 10px;
+    }
+
+    .btn2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        color: #ffffff;
+        background-color: rgb(21, 0, 255);
+        padding: 1.5em 10em 1.5em 10em;
+        border-radius: 12px;
+        transition: all 1s;
+        border: none;
+        cursor: pointer;
+    }
+
+    .btn2:hover {
+        background-color: #4d09fb;
+        scale: 1.05;
+    }
+
+    .info p {
+        font-size: 10px;
+    }
+
+    .logo {
+        max-width: 80px;
+        width: 100%;
+        height: auto;
+        filter: grayscale(100%) brightness(100) opacity(50%);
+    }
+
+}
